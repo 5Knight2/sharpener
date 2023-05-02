@@ -1,19 +1,18 @@
-let header=document.getElementById('header-title');
-header.style.borderBottom='3px solid';
 
-let titles=document.getElementsByClassName('title');
-titles[0].style.color='green';
-titles[0].style.fontWeight='bold';
+let items=document.querySelector('#items');
+let h=document.createElement('div');
 
-//let item2=document.querySelector('.list-group-item:nth-child(2)');
-//item2.style.backgroundColor='green';
+let p1=document.createElement('li');
+p1.className='list-group-item';
+let txt=document.createTextNode('Hello');
+let txt2=document.createTextNode('Hello');
 
-//let item3=document.querySelector('.list-group-item:nth-child(3)');
-//item3.style.visibility='hidden';
+p1.appendChild(txt);
+h.appendChild(txt2);
 
-let items=document.querySelectorAll('.list-group-item');
-items[1].style.color='green';
 
-for(let i=0;i<items.length;i++){
-    if(i%2==1){items[i].style.backgroundColor='green';}
-}
+let li=document.querySelector('ul');
+li.parentElement.insertBefore(p1,li);
+
+let h1=document.querySelector('h1');
+h1.parentElement.insertBefore(h,h1);
