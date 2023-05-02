@@ -5,9 +5,15 @@ let titles=document.getElementsByClassName('title');
 titles[0].style.color='green';
 titles[0].style.fontWeight='bold';
 
-let items=document.getElementsByClassName('list-group-item');
-for(let i=0;i<items.length;i++)items[i].style.fontWeight='bold';
-items[2].style.backgroundColor='green';
+//let item2=document.querySelector('.list-group-item:nth-child(2)');
+//item2.style.backgroundColor='green';
 
-let li=document.getElementsByTagName('li');
-li[4].style.fontWeight='bold';
+//let item3=document.querySelector('.list-group-item:nth-child(3)');
+//item3.style.visibility='hidden';
+
+let items=document.querySelectorAll('.list-group-item');
+items[1].style.color='green';
+
+for(let i=0;i<items.length;i++){
+    if(i%2==1){items[i].style.backgroundColor='green';}
+}
