@@ -1,4 +1,6 @@
-console.log('Learning git');
-console.log('Learning git');
+let header=document.getElementById('header-title');
+header.style.borderBottom='3px solid';
 
-console.log('Learning git');
+let item=document.getElementsByClassName('title');
+item[0].style.color='green';
+item[0].style.fontWeight='bold';
